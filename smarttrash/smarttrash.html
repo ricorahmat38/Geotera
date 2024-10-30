@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Pawmedic</title>
+
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+  </head>
+  <body>
+    <!--scroll top-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop_icon"></i>
+    </a>
+
+    <!--header-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <a href="#" class="nav_logo">GEOTERA</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_item">
+              <a href="#quality" class="nav_link">Quality</a>
+            </li>
+            <li class="nav_item">
+              <a href="#product" class="nav_link">Product</a>
+            </li>
+            <li class="nav_item">
+              <a href="#sizechart" class="nav_link">Ingredient</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact us</a>
+            </li>
+
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_shop">
+          <a href="#" class="nav_icon">
+            <i class='bx bxs-user'></i>
+          </a>
+          <div class="nav_shop-content">
+            <div class="title_shop">
+              <span>Profil akun</span>
+            </div>
+
+            <div class="item">
+              <div class="image_medicine">
+                <div class="image_m">
+                  <img src="assets/img/obatpaw4.png" alt="" />
+                </div>
+              </div>
+              <div class="description">
+                <span>Rico Rahmat</span>
+                <span>Mahasiswa</span>
+              </div>
+              <div class="total-price">Aktif</div>
+              <a href="#" class="delete-item">
+                <i class="bx bx-x"></i>
+              </a>
+            </div>
+
+
+            <div class="btn-viewcard">
+              <a href="http://localhost/Geotera/profil/index.html" class="button-top">View profil</a>
+            </div>
+            <div class="btn-checkout">
+              <a href="http://localhost/Geotera/index.html" class="button-top2">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--home-->
+      <section class="home" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="home_container bd-container bd-grid">
+                  <div class="home_data">
+                    <h1 class="home_title">Otomatis</h1>
+                    <h2 class="home_subtitle">
+                        Sensor membuka tutup secara otomatis, menjaga kebersihan tanpa sentuhan.
+                    </h2>
+                    <a href="#" class="button">Explore Now</a>
+                  </div>
+                  <img src="assets/img/trash1.png" alt="" class="home_img" />
+                </div>
+              </div>
+
+          <div class="mySlides fade">
+            <div class="home_container bd-container bd-grid">
+              <div class="home_data">
+                <h1 class="home_title">Hemat Energi</h1>
+                <h2 class="home_subtitle">
+                    Menggunakan daya minimal, cocok untuk penggunaan jangka panjang.
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="assets/img/trash2.png" alt="" class="home_img" />
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="home_container bd-container bd-grid">
+              <div class="home_data">
+                <h1 class="home_title">Pemantauan Kapasitas Real-Time</h1>
+                <h2 class="home_subtitle">
+                    Memberi informasi saat penuh untuk pengelolaan sampah lebih efisien.
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="assets/img/trash3.png" alt="" class="home_img" />
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="home_container bd-container bd-grid">
+              <div class="home_data">
+                <h1 class="home_title">Ramah Lingkungan</h1>
+                <h2 class="home_subtitle">
+                    Material ramah lingkungan dan mendukung kebersihan dalam proses pengelolaan
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="assets/img/trash4.png" alt="" class="home_img" />
+            </div>
+          </div>
+        </div>
+        <br />
+      </section>
+
+      <!--next and previous buttons-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!--the dots/circle-->
+      <div style="text-align: center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!--about-->
+      <section class="about section bd-container" id="about">
+        <div class="abput_container bd-grid">
+          <div class="about_data">
+            <span class="section-subtitle about_intial"> About us</span>
+            <h2 class="section-title about_intial">
+              Kami menghadirkan <br />
+              teknologi terbaru
+            </h2>
+            <p class="about_description">
+              Smart Trash bin merupakan teknologi yang dapat menjaga kestabilan lingkungan.<br />
+              Dengan adanya Smart Trash bin, ruangan akan selalu terjaga bersih karena perangkatini.<br/>
+              Dibekali dengan fitur pemantauan kapasitas sampah dan Sensor untuk membuka secara otomatis.
+            </p>
+            <a href="#" class="button">Explore History</a>
+          </div>
+          <img src="assets/img/about pawmedic.jpg" alt="" class="about_img" />
+        </div>
+      </section>
+
+      <!--service-->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">Offering</span>
+        <h2 class="section-title">Our amazing service</h2>
+        <div class="services_container bd-grid">
+          <div class="services_content">
+            <img
+              src="assets/img/boxpawmedic3.jpg"
+              alt=""
+              class="services_img"
+            />
+            <h3 class="services_title">Kualitas obat yang sangat baik</h3>
+            <p class="services_description">
+              Obat yang kami sediakan telah melalui proses seleksi ketat dan
+              dipilih berdasarkan standar kualitas tertinggi.
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img
+              src="assets/img/boxpawmedic2.jpg"
+              alt=""
+              class="services_img"
+            />
+            <h3 class="services_title">Kemasan yang terjaga</h3>
+            <p class="services_description">
+              kami memastikan setiap produk obat yang kami sediakan dikemas
+              dengan teliti dan aman untuk digunakan.
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img
+              src="assets/img/boxpawmedic1.jpg"
+              alt=""
+              class="services_img"
+            />
+            <h3 class="services_title">Memudahkan pelanggan</h3>
+            <p class="services_description">
+              Dengan layanan ini, Anda dapat memesan obat untuk hewan kesayangan
+              Anda secara online atau melalui aplikasi kami.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--product-->
+      <section class="product_section bd-container" id="products">
+        <span class="section-subtitle">Special</span>
+        <h2 class="section-title">FITUR</h2>
+
+        <div class="products_container bd-grid logo-slider slick_two">
+          <div class="products_content">
+            <img src="assets/img/fitur1.png" alt="" class="products_img" />
+            <span class="products_price">Memantau Data sampah</span>
+            <a href="http://localhost/Geotera/dashboard/index.html" class="button products_button_detail">Dashboard</a>
+             
+            </a>
+          </div>
+
+          <div class="products_content">
+            <img src="assets/img/fitur2.png" alt="" class="products_img" />
+            <span class="products_price">Melihat jalur smart trash</span>
+            <a href="http://localhost/Geotera/dashboard/index.html" class="button products_button_detail">Tracking</a>
+
+            </a>
+          </div>
+
+          <div class="products_content">
+            <img src="assets/img/fitur3.png" alt="" class="products_img" />
+            <span class="products_price">Control Panel Teknologi</span>
+            <a href="http://localhost/Geotera/dashboard/index.html" class="button products_button_detail">Remote</a>
+            
+            </a>
+          </div>
+
+      
+        </div>
+      </section>
+
+      <!--size chart-->
+
+      <section class="size section bd-container">
+        <div class="size_container bd-grid">
+          <div class="sice_data">
+            <span class="section-subtitle size_initial">Ingredient</span>
+            <h2 class="section-title size_initial">Find Your Medication</h2>
+            <p class="size_description">
+              Silahkan untuk melihat bahan-bahan obat dari kami.<br />
+              disini anda akan mengetahui kandungan dan bahan yang ada di dalam
+              obat.
+            </p>
+          </div>
+          <img src="assets/img/bahanobatpaw.png" alt="" class="size_img" />
+        </div>
+      </section>
+
+      <!--contact us-->
+
+      <section class="contact bd-container" id="contact">
+        <div class="contact_container bd-grid">
+          <div class="contact_data">
+            <span class="section-subtitle contact_initial">Let's Talk</span>
+            <h2 class="section-title contact_initial">Contact Us</h2>
+            <p class="contact_description">
+              Jika kamu ingin membeli obat di PawMedic, kami akan segera
+              melayani kamu dengan layanan 24/7
+            </p>
+          </div>
+          <div class="contact_button">
+            <a href="#" class="button">Contact Us now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer section bd-container">
+      <div class="footer_container bd-grid">
+        <div class="footer_content">
+          <a href="#" class="footer_logo">Geotera</a>
+          <span class="footer_description">Smart Trash</span>
+        </div>
+        <div>
+          <a href="#" class="footer_social"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="footer_social"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="#" class="footer_social"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <div class="footer_content">
+          <h3 class="footer_title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer_link">Shipping and Returns</a></li>
+            <li><a href="#" class="footer_link">Mesurement Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer_information">
+          <h3 class="footer_title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer_link"></a>Event</li>
+            <li><a href="#" class="footer_link"></a>Contact Us</li>
+            <li><a href="#" class="footer_link"></a>Privacy Policy</li>
+            <li><a href="#" class="footer_link"></a>Terms of services</li>
+          </ul>
+        </div>
+
+        <div class="footer_information">
+          <h3 class="footer_title">Adress</h3>
+          <ul>
+            <li>Jl. Ahmad Yani No.117 Jemur Wonosari, kec. Wonocolo</li>
+            <li>Surabaya, Jawa Timur - Indonesia</li>
+            <li>Phone : +62-896 77780579</li>
+            <li>Whatsapp : 089677780579</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer_copy">
+        &#169; 2024 Rico Rahmat Hendriyanto. All right reserved
+      </p>
+    </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--main js-->
+    <script src="assets/js/main.js"></script>
+
+    <!--js slick-->
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script>
+      $(".slick_two").slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        infinite: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 5000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToscroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

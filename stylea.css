@@ -1,0 +1,165 @@
+:root {
+    --primary-color: white;
+    --secondary-color: lightgreen;
+    --background-color: rgba(21, 26, 24, 0.9);
+    --box-shadow-color: black;
+    --hover-background: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bgrd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background-color);
+    padding: 3vw 5vw; 
+    width: 70%;
+    max-width: 400px; 
+    box-shadow: 0px 0px 25px 10px var(--box-shadow-color);
+    border-radius: 15px;
+}
+
+.input h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem; /* Responsive font size */
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.box-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 8px 0;
+}
+
+.box-input i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 5px 0;
+}
+
+.box-input input {
+    width: 85%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.box-input input::placeholder {
+    color: var(--primary-color);
+}
+
+.btn-input {
+    margin: 10px 0 20px;
+    background: none;
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    color: var(--primary-color);
+    font-size: 1rem; 
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.btn-input:hover {
+    background: var(--hover-background);
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bottom p,
+.bottom a {
+    color: var(--primary-color);
+    font-size: 1rem; 
+}
+
+.bottom a {
+    color: var(--secondary-color);
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/* Responsive for tablets */
+@media screen and (max-width: 768px) {
+    .input {
+        padding: 4vw; /* Increase padding for tablet */
+        max-width: 90%;
+    }
+
+    .input h1 {
+        font-size: 1.6rem; /* Slightly smaller for tablet */
+    }
+
+    .box-input i {
+        font-size: 1.3rem; /* Adjust icon size for tablet */
+    }
+
+    .box-input input {
+        font-size: 0.9rem; /* Adjust input font size for tablet */
+    }
+
+    .btn-input {
+        font-size: 0.9rem; /* Adjust button font size for tablet */
+    }
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 480px) {
+    .input {
+        padding: 5vw; /* Increase padding for mobile */
+        max-width: 90%; /* Full width on mobile */
+    }
+
+    .input h1 {
+        font-size: 1.5rem; /* Smaller for mobile */
+    }
+
+    .box-input {
+        flex-direction: column; /* Stack icon and input vertically on mobile */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .box-input i {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+        margin-bottom: 5px; /* Space between icon and input */
+    }
+
+    .box-input input {
+        font-size: 0.8rem; /* Smaller input font size for mobile */
+    }
+
+    .btn-input {
+        font-size: 0.9rem; /* Smaller button font size for mobile */
+        padding: 12px; /* Adjust padding for button */
+    }
+
+    .bottom p,
+    .bottom a {
+        font-size: 0.9rem; /* Smaller text size for mobile */
+    }
+}
